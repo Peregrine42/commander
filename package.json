@@ -1,32 +1,28 @@
 {
   "name": "heroku",
   "version": "0.0.0",
-  "description": "a test heroku build",
+  "description": "heroku test build",
   "main": "web.js",
+  "dependencies": {
+    "express": "~3.4.7",
+    "logfmt": "~0.18.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jane-doe/node-example.git"
+    "url": "https://github.com/Peregrine42/commander.git"
   },
   "keywords": [
-    "example",
+    "basic",
     "heroku"
   ],
   "author": "duncan-fermor",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jane-doe/node-example/issues"
+    "url": "https://github.com/Peregrine42/commander/issues"
   },
-  "homepage": "https://github.com/jane-doe/node-example",
-  "dependencies": {
-    "logfmt": "~0.18.1",
-    "express": "~3.4.7"
-  },
-  {
-    "engines": {
-      "node": "0.10.23"
-    }
-  }
+  "homepage": "https://github.com/Peregrine42/commander"
 }
