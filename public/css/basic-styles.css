@@ -1,0 +1,12 @@
+#my-rectangle {
+	background-color: green;
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	width: 100px;
+	height: 100px;
+}
+
+#viewporter {
+	background-color: blue;
+}
