@@ -14,7 +14,33 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 
 	<script src="scripts/lib/jquery-1.10.2.js"></script>
-	<script src="scripts/lib/debug.js"></script>
+	<script>
+		function loadScript( url, callback ) {
+			  var script = document.createElement( "script" )
+			  script.type = "text/javascript";
+			  if(script.readyState) {  //IE
+			    script.onreadystatechange = function() {
+			      if ( script.readyState === "loaded" || script.readyState === "complete" ) {
+			        script.onreadystatechange = null;
+			        callback();
+			      }
+			    };
+			  } else {  //Others
+			    script.onload = function() {
+			      callback();
+			    };
+			  }
+
+			  script.src = url;
+			  document.getElementsByTagName( "head" )[0].appendChild( script );
+			}
+
+
+		// call the function...
+		loadScript("scripts/lib/debug.js", function() {
+		  console.log('script ready!'); 
+		});		
+	</script>
 </head>
 
 <body>
